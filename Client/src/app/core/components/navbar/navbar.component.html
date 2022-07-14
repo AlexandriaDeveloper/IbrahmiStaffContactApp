@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="navbar">
+
+
+  <mat-toolbar-row>
+
+
+
+    <button mat-icon-button class="example-icon" (click)="sidebarToggle()"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <ul class="menu">
+      <li> الرئيسيه</li>
+      <li> الأعدادات</li>
+    </ul>
+
+    <div class="spacer">
+
+    </div>
+
+    <span class="title"> مرتبات </span>
+    <mat-slide-toggle [checked]="isDark" color="accent" (change)="isDarkToggle()"></mat-slide-toggle>
+  </mat-toolbar-row>
+</mat-toolbar>

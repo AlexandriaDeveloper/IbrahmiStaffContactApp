@@ -1,0 +1,22 @@
+.navbar{
+  position: absolute;
+  height: 80px;
+.spacer{  flex: 1 1 auto; }
+  .menu{
+     position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    li{
+      list-style: none;
+      display: flex;
+      padding-right: 1rem;
+      font-family: 'Droid Arabic Kufi', serif;
+    }
+  }
+.title{
+  padding: 20px;
+  font-size: 30px;
+  font-family: Cairo;
+}
+}
