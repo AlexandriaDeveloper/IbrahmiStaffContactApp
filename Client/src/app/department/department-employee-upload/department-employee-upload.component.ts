@@ -63,7 +63,7 @@ export class DepartmentEmployeeUploadComponent implements OnInit {
 
       })
       reader.onloadstart = (e: any) => {
-        console.log('load start');
+
 
         this.uploading = true;
       }
@@ -74,7 +74,7 @@ export class DepartmentEmployeeUploadComponent implements OnInit {
 
       };
       reader.onloadend = (e => {
-        console.log('load end');
+
 
 
 
@@ -108,7 +108,6 @@ export class DepartmentEmployeeUploadComponent implements OnInit {
   }
   submit() {
 
-    console.log(this.departmentForm.value);
 
     this.uploadFile()
 

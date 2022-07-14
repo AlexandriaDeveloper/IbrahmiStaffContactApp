@@ -66,7 +66,7 @@ export class UploadEmployeesComponent implements OnInit {
 
       })
       reader.onloadstart = (e: any) => {
-        console.log('load start');
+
 
         this.uploading = true;
       }
@@ -77,7 +77,7 @@ export class UploadEmployeesComponent implements OnInit {
 
       };
       reader.onloadend = (e => {
-        console.log('load end');
+
 
         this.employeeService.uploadFile(this.file).subscribe({
           next: (result) => { },

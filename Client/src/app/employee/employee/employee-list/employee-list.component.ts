@@ -81,7 +81,7 @@ export class EmployeeListComponent implements OnInit, AfterViewInit {
     }
     this.departmentService.getDepartments(this.departmentParam).subscribe({
       next: (x: Department[]) => {
-        this.departments = x; console.log(x);
+        this.departments = x;
       }
     });
 
@@ -215,7 +215,6 @@ export class EmployeeListComponent implements OnInit, AfterViewInit {
 
   private _filter(value: string): Department[] {
 
-    console.log(value);
 
 
     const filterValue = value.toLowerCase();
@@ -246,11 +245,9 @@ export class EmployeeListComponent implements OnInit, AfterViewInit {
 
   getDepartmentById(departmentId) {
 
-    // console.log(this.departments);
-
 
     const index = this.departments.findIndex(x => x.id === departmentId);
-    //   console.log(index);
+
 
     return this.departments[index] ? this.departments[index]?.name : '';
 

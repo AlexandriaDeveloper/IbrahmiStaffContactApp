@@ -26,7 +26,7 @@ export class DepartmentAddDialogComponent implements OnInit, AfterViewInit {
 
 
       this.deparment = { id: this.data.department.id, name: this.data.department.name }
-      console.log(this.deparment);
+
 
     }
     else if (this.data.type === 'add') {

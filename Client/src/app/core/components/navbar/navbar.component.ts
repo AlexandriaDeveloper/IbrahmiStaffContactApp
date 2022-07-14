@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.theme);
+
 
 
     this.isDark = this.theme === 'my-dark-theme' ? true : false

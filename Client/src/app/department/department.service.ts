@@ -15,17 +15,14 @@ export class DepartmentService {
   baseApiUrl = environment.baseUrl + 'department/';
   constructor(private http: HttpClient) { }
   uploadFile(file: DepartmentEmployeeFileUpload): Observable<any> {
-    console.log(file);
+
 
     const formData = new FormData();
     formData.append("fileUpload", file.fileUpload, file.fileUpload.name);
     formData.append("selectedDepartmentId", file.selectedDepartmentId)
 
     return this.http.post(this.baseApiUrl + 'upload', formData);
-    // return this.http.post(this.baseApiUrl + 'upload', formData, {
-    //   reportProgress: true,
-    //   observe: 'events'
-    // });
+
   }
 
   getDepartments(params: DepartmentParam) {

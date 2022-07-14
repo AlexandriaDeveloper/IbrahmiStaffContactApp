@@ -25,7 +25,7 @@ export class EmployeeContactDialogComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    console.log(this.data);
+
 
 
     this.employeeForm = this.initilizeForm();
@@ -63,7 +63,7 @@ export class EmployeeContactDialogComponent implements OnInit, AfterViewInit {
 
   }
   SaveAndClose() {
-    console.log(this.data.employee);
+
 
     this.dialogRef.close(this.data.employee)
   }

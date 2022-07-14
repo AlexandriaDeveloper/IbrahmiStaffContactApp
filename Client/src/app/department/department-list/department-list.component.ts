@@ -84,7 +84,7 @@ export class DepartmentListComponent implements OnInit, AfterViewInit {
   }
 
   openNewDepartmentDialog(type, element = null): void {
-    console.log(element);
+
 
     const dialogRef = this.dialog.open(DepartmentAddDialogComponent, {
       minWidth: '600px',
